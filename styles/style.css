@@ -1,0 +1,15 @@
+/*@import url('../fonts/Montserrat-Regular.ttf');
+@import url('../fonts/Montserrat-Bold.ttf');
+*/
+body{
+    background-image: url('../img/background.jpg');
+}
+.fontBold{
+    font-weight: 700;
+}
+.fontExtraBold{
+    font-weight: 800;
+}
+.mainText{
+    font-size: 2.6rem
+}
