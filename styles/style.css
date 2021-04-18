@@ -10,6 +10,50 @@ body{
 .fontExtraBold{
     font-weight: 800;
 }
+.brandLogo{
+    width: 80%;
+}
 .mainText{
-    font-size: 2.6rem
+    font-size: 2.6rem;
+    text-align: left;
+    padding: 5.5rem 0 5.5rem 0;
+}
+.mainRightSection{
+    color: white;
+}
+@media (max-width: 576px){
+    .mainText{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+.whiteBorderedButton{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+section.instructionList{
+    background-color: rgba(199, 189, 111, 0.4);
+}
+section.instructionList li div p{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+span.capitalizedNumber{
+    font-size: 4rem;
+}
+.whiteCard{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 4.5rem 5.5rem  4rem 5.5rem;
+}
+.termCondition{
+    color: #C7BD6F;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.checkImg{
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
 }
