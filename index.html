@@ -5,12 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<link rel="stylesheet" href="styles/bootstrap.min.css"/>-->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-        body{
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css"/>
     
@@ -25,7 +19,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 22rem" >
+            <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 19rem" >
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active fontBold" href="#">UPCOMING SHOWS</a>
@@ -49,8 +43,8 @@
             </div>
         </div>
     </nav>
-    <main class="mt-5">
-        <section class="container">
+    <div class="mt-5">
+        <section class="container mb-5">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <img src="img/awards-logo.png" width="100%" alt="Awards Logo">
@@ -78,33 +72,37 @@
                 </div>
             </div>
         </section>
-        <section class="p-5 instructionList">
-            <ul class="text-white list-unstyled row fontBold">
-                <li class="col-12 col-sm-4">
-                    <div class="d-flex">
-                        <span class="capitalizedNumber fontExtraBold">1.</span>
-                        <p class="mt-auto">Choose 3 of your favorite award categories...</p>
+        <section class="instructionList">
+            <div class="container">
+                <ul class="text-white list-unstyled fontBold row justify-content-center">
+                    <div class="col-11 col-md-10 row">
+                        <li class="col-12 col-sm-4">
+                            <div class="d-flex align-items-end">
+                                <h1 class="capitalizedNumber fontExtraBold">1.</h1>
+                                <p class="">Choose 3 of your favorite award categories...</p>
+                            </div>
+                        </li>
+                        <li class="col-12 col-sm-4">
+                            <div class="d-flex align-items-end">
+                                <h1 class="capitalizedNumber fontExtraBold">2.</h1>
+                                <p class="">Nominate a different product in each category...</p>
+                            </div>
+                        </li> 
+                        <li class="col-12 col-sm-4">
+                            <div class="d-flex align-items-end">
+                                <h1 class="capitalizedNumber fontExtraBold">3.</h1>
+                                <p class="">Submit your form and wait for voting to begin!</p>
+                            </div>
+                        </li> 
                     </div>
-                </li>
-                <li class="col-12 col-sm-4">
-                    <div class="d-flex">
-                        <span class="capitalizedNumber fontExtraBold">2.</span>
-                        <p class="mt-auto">Nominate a different product in each category...</p>
-                    </div>
-                </li> 
-                <li class="col-12 col-sm-4">
-                    <div class="d-flex">
-                        <span class="capitalizedNumber fontExtraBold">3.</span>
-                        <p class="mt-auto">Submit your form and wait for voting to begin!</p>
-                    </div>
-                </li> 
-            </ul>
+                </ul>
+            </div>
         </section> 
-        <section>
+        <section class="termsAndConditions container mb-5 pb-5">
             <div class="row d-flex justify-content-center">
-                <div class="col-11 col-md-8">
+                <div class="col-11 col-md-10">
                     <div class="whiteCard">
-                        <h3 class="text-center fontBold pb-4">TERMS & CONDITIONS</h3>                        
+                        <h3 class="text-center fontExtraBold pb-4">TERMS & CONDITIONS</h3>                        
                         <div class="row">
                             <div class="row">
                                 <ul class="col-12 col-sm-6 list-unstyled">
@@ -119,16 +117,19 @@
                                         <img src="img/check-icon.png" alt="Check" class="checkImg">
                                         <div class="">
                                             <h2 class="termCondition">Duplication</h2>
-                                            <p>All products must be different and each product can ONLY be in one category:
-                                            ■Product X CAN be nominated in EITHER Best CBD Edible OR Best CBD Flower.
-                                            ■Product X CANNOT be submitted in BOTH Best CBD Edible AND Best CBD Flower.</p>
+                                            <p>All products must be different and each product can <b class="text-uppercase">only</b> be in one category:
+                                                <ul class="duplicationList">
+                                                    <li>Product X <b class="text-uppercase">can</b> be nominated in <b class="text-uppercase">either</b> Best CBD Edible <b class="text-uppercase">or</b> Best CBD Flower.</li>
+                                                    <li>Product X <b class="text-uppercase">cannot</b> be submitted in <b class="text-uppercase">both</b> Best CBD Edible <b class="text-uppercase">and</b> Best CBD Flower.</li>
+                                                </ul>
+                                            </p>
                                         </div>  
                                     </li>
                                     <li class="d-flex">
                                         <img src="img/check-icon.png" alt="Check" class="checkImg">
                                         <div class="">
-                                            <h2 class="termCondition">RESTRICTION </h2>
-                                            <p>You must have a booth or sponsorship at USA CBD EXPO Atlanta to qualify and win.</p>
+                                            <h2 class="termCondition">Restriction </h2>
+                                            <p><b class="text-uppercase">You must have a booth or sponsorship</b> at USA CBD EXPO Atlanta to qualify and win.</p>
                                         </div>  
                                     </li>
                                 </ul>
@@ -161,13 +162,172 @@
                 </div>
 
             </div>
-            
         </section>  
-        <section class="row">
-            <h1 class="col-12 text-center">CATEGORIES</h1>
+        <div class="categoriesContainer">
+            <section class="container mt-5 pt-5 text-white categories">
+                <h3 class="text-center fontExtraBold">CATEGORIES</h3>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-11 row">
+                        <ul class="list-unstyled d-flex justify-content-between categoriesList">
+                            <li class="d-flex flex-column">
+                                <img src="img/best-cbd-vape-icon.png" alt="Vape">
+                                <span class="fontExtraBold text-center">Best CBD Vape</span>
+                            </li>
+                            <li class="d-flex flex-column">
+                                <img src="img/best-cbd-edible-icon.png" alt="Edible">
+                                <span class="fontExtraBold text-center">Best CBD Edible</span>
+                            </li>
+                            <li class="d-flex flex-column">
+                                <img src="img/best-cbd-topical-icon.png" alt="Tropical">
+                                <span class="fontExtraBold text-center">Best CBD Tropical</span>
+                            </li>
+                            <li class="d-flex flex-column">
+                                <img src="img/best-cbd-tincture-icon.png" alt="Tincture">
+                                <span class="fontExtraBold  text-center">Best CBD Tincture</span>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled d-flex justify-content-between categoriesList">
+                            <li class="d-flex flex-column">
+                                <img src="img/best-cbd-flower-icon.png" alt="Flower">
+                                <span class="fontExtraBold text-center">Best CBD Flower</span>
+                            </li>
+                            <li class="d-flex flex-column">
+                                <img src="img/best-cbd-pet-product-icon.png" alt="PetProduct">
+                                <span class="fontExtraBold text-center">Best CBD Pet Product</span>
+                            </li>
+                            <li class="d-flex flex-column">
+                                <img src="img/most-innovative-cbd-product-icon.png" alt="Innovative product">
+                                <span class="fontExtraBold text-center">Most Innovative CBD Product</span>
+                            </li>
+                            <li class="d-flex flex-column">
+                                <img src="img/best-overall-branding-and-marketing-icon.png" alt="Best Marketing">
+                                <span class="fontExtraBold text-center">Best Overall Branding & Marketing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="container nominations">
+            <div class="row d-flex justify-content-center">
+                <form class="col-11 col-md-10">
+                    <div class="nominationCard mb-5">
+                        <div class="row nominationForm">
+                            <div class="col-12 col-md-2 d-flex align-items-center">
+                                <span class="btn btn-block text-uppercase nominationNumber mx-auto mx-md-0">Nomination #1</span>
+                            </div>
+                            <div class="col-12 col-md-5 mt-3 mt-md-0">
+                                <select class="form-control selectCategory" name="" id="">
+                                    <option value="">*Select the category</option>
+                                    <option value="1">Select the category</option>
+                                    <option value="2">Select the category</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-5 mt-3 mt-md-0">
+                                <input type="text" class="form-control productInput" placeholder="Write product name here" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nominationCard mb-5">
+                        <div class="row nominationForm">
+                            <div class="col-12 col-md-2 d-flex align-items-center">
+                                <span class="btn btn-block text-uppercase nominationNumber mx-auto mx-md-0">Nomination #2</span>
+                            </div>
+                            <div class="col-12 col-md-5 mt-3 mt-md-0">
+                                <select class="form-control selectCategory" name="" id="">
+                                    <option value="">*Select the category</option>
+                                    <option value="1">Select the category</option>
+                                    <option value="2">Select the category</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-5 mt-3 mt-md-0">
+                                <input type="text" class="form-control productInput" placeholder="Write product name here" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nominationCard mb-5">
+                        <div class="row nominationForm">
+                            <div class="col-12 col-md-2 d-flex align-items-center">
+                                <span class="btn btn-block text-uppercase nominationNumber mx-auto mx-md-0">Nomination #3</span>
+                            </div>
+                            <div class="col-12 col-md-5 mt-3 mt-md-0">
+                                <select class="form-control selectCategory" name="" id="">
+                                    <option value="">*Select the category</option>
+                                    <option value="1">Select the category</option>
+                                    <option value="2">Select the category</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-5 mt-3 mt-md-0">
+                                <input type="text" class="form-control productInput" placeholder="Write product name here" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nominationCard mb-5">
+                        <div class="row nominationForm">
+                            <div class="col-12 col-md-2 d-flex align-items-center">
+                                <span class="btn btn-block text-uppercase nominationNumber mx-auto mx-md-0">Contact info</span>
+                            </div>
+                            <div class="col-12 col-md-3 mt-3 mt-md-0">
+                                <input type="text" class="form-control contactInput" placeholder="Full Name" name="" id="">
+                            </div>
+                            <div class="col-12 col-md-3 mt-3 mt-md-0">
+                                <input type="tel" class="form-control contactInput" placeholder="Phone" name="" id="">
+                            </div>
+                            <div class="col-12 col-md-4 mt-3 mt-md-0">
+                                <input type="email" class="form-control productInput" placeholder="Email" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5 d-flex justify-content-center">
+                        <button type="submit" class="btn btnSubmit">submit</button>
+                    </div>
+                </form>
+            </div>
         </section>
-    </main>
-    <footer></footer>
+    </div>
+    <footer class="footer text-white py-5" id="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-10 row py-5 footerLinks">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a class="footerTitle">UPCOMING SHOWS</a>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a href="#footer">ATLANTA 2021</a></li>
+                            <li class="mb-3"><a href="#footer">MEDELLIN 2021</a></li>
+                            <li class="mb-3"><a href="#footer">CHICAGO 2021</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a class="footerTitle">BE A PART OF IT</a>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a href="#footer">BECOME AN EXHIBITOR</a></li>
+                            <li class="mb-3"><a href="#footer">BECOME A SPONSOR</a></li>
+                            <li class="mb-3"><a href="#footer">BECOME A SPEAKER</a></li>
+                            <li class="mb-3"><a href="#footer"></a>BECOME A MEDIA PARTNER ATTEND</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mt-4 mt-lg-0">
+                        <a class="footerTitle">PAST SHOWS</a>
+                        MIAMI 2019 VEGAS 2020    
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mt-4 mt-lg-0">
+                        <a class="footerTitle">RESOURCES</a>
+                        E-BOOKS BLOGS & NEWS PRESS
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mt-4 mt-lg-0">
+                        <a class="footerTitle">ABOUT US</a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mt-4 mt-lg-0">
+                        <a class="footerTitle">CONTACT US</a>
+                        FAQ Tax & Sampling Information 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <img src="img/cbdExpoLogoB&W.svg" class="footerLogo" alt="USA CBD Expo logo">
+            </div>
+        </div>
+    </footer>
     <!--<script src="js/popper.min.js"></script>-->
     <!--<script src="js/bootstrap.min.js"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

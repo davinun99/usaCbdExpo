@@ -3,6 +3,7 @@
 */
 body{
     background-image: url('../img/background.jpg');
+    font-family: 'Montserrat', sans-serif;
 }
 .fontBold{
     font-weight: 700;
@@ -14,32 +15,33 @@ body{
     width: 80%;
 }
 .mainText{
-    font-size: 2.6rem;
+    font-size: 2.7rem;
     text-align: left;
     padding: 5.5rem 0 5.5rem 0;
 }
 .mainRightSection{
     color: white;
 }
-@media (max-width: 576px){
-    .mainText{
-        font-size: 1.8rem;
-        text-align: center;
-    }
+.termsAndConditions{
+    margin-top: -7rem;
 }
 .whiteBorderedButton{
-    border: 2px solid white;
+    border: 4px solid white;
     border-radius: 10px;
+    font-size: 1.6rem;
 }
 section.instructionList{
     background-color: rgba(199, 189, 111, 0.4);
+    padding: 2.5rem 0 10rem 0;
 }
 section.instructionList li div p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
+    margin-left: 0.5rem;
 }
-span.capitalizedNumber{
+h1.capitalizedNumber{
     font-size: 4rem;
+    
 }
 .whiteCard{
     background-color: white;
@@ -52,8 +54,143 @@ span.capitalizedNumber{
     text-transform: uppercase;
     font-size: 1rem;
 }
+
+ul.duplicationList {
+    list-style: none; /* Remove default bullets */
+}
+  
+ul.duplicationList li::before {
+    content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgba(185, 194, 121, 1); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 .checkImg{
     width: 40px;
     height: 40px;
     margin-right: 1rem;
+}
+.categoriesContainer{
+    background-color: rgba(10, 33, 17, 0.5);
+    padding-bottom: 6rem;
+}
+.categories > div > div > ul > li > img{
+    height: 140px;
+    max-width: 180px;
+}
+.categoriesList{
+    width: 50%;
+}
+.categories > div > div ul li span{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+section.nominations{
+    margin-top: -4rem;
+}
+
+.nominationCard{
+    background-color: white;
+    border-radius: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+div.nominationForm{
+    margin-left: -3rem;
+}
+span.nominationNumber{
+    background-color: rgba(199, 189, 111, 1);
+    border-radius: 10px;
+    font-weight: 800;
+    color: white;
+    padding: 0.8rem 0.7rem;
+}
+.productInput, .selectCategory, .contactInput{
+    background-color:rgba(239, 239, 239, 1);
+    color: rgba(188, 188, 188, 1);
+    padding: 0.8rem;
+    border: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(188, 188, 188, 1) !important;/* Firefox */
+} 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(188, 188, 188, 1) !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(188, 188, 188, 1) !important;
+}
+.productInput{
+    width: 90%;
+}
+.contactInput{
+    width: 100%;
+}
+.footerLogo{
+    
+}
+@media (max-width: 576px){
+    .footerLogo{
+        
+    }
+    .mainText{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .whiteCard{
+        padding: 4.5rem 1rem 4rem 1rem;
+    }
+    .checkImg{
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5rem;
+    }
+    .categoriesList{
+        width: 100%;
+    }
+    .categories > div > div > ul > li > img{
+        height: 70px;
+        max-width: 90px;
+    }
+    .categories > div > div ul li span{
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+    div.nominationForm{
+        margin-left: 0;
+    }
+    .selectCategory, .productInput, .contactInput{
+        width: 95%;
+    }
+}
+.btnSubmit{
+    background: rgba(56, 212, 48, 1);
+    color: white;
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 0.5rem 3.5rem;
+}
+footer.footer{
+    background: rgba(51, 51, 51, 1);   
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footerTitle{
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.footerLinks li{
+    font-size: 0.9rem;
 }
