@@ -19,6 +19,7 @@ body{
     text-align: left;
     padding: 5.5rem 0 5.5rem 0;
 }
+
 .mainRightSection{
     color: white;
 }
@@ -133,16 +134,29 @@ span.nominationNumber{
 .footerLogo{
     
 }
-@media (max-width: 576px){
+@media (max-width: 768px){
     .footerLogo{
         
     }
     .mainText{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         text-align: center;
+        padding: 1rem 2rem 3rem 2rem;
+    }
+
+    .counterList{
+        padding:  0 2rem 0 2rem;
+    }
+    .counterList li{
+        padding: 0 0.25rem 0 0.25rem;
+    }
+
+    .whiteBorderedButton{
+        font-size: 0.9rem;
+        border-width: 2px;
     }
     .whiteCard{
-        padding: 4.5rem 1rem 4rem 1rem;
+        padding: 4.5rem 1rem 0 1rem;
     }
     .checkImg{
         width: 20px;
@@ -151,6 +165,9 @@ span.nominationNumber{
     }
     .categoriesList{
         width: 100%;
+    }
+    .categories > div > div > ul > li {
+        max-width: 100px;
     }
     .categories > div > div > ul > li > img{
         height: 70px;
@@ -167,6 +184,29 @@ span.nominationNumber{
     }
     .selectCategory, .productInput, .contactInput{
         width: 95%;
+    }
+    .nominationCard{
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media(max-width:992px){
+    .mainText{
+        font-size: 1.7rem;
+        text-align: center;
+        padding: 1rem 2rem 3rem 2rem;
+    }
+    .counterList{
+        padding:  0 2rem 0 2rem;
+    }
+    .counterList li{
+        padding: 0 0.25rem 0 0.25rem;
+    }
+
+    .whiteBorderedButton{
+        font-size: 0.9rem;
+        border-width: 2px;
     }
 }
 .btnSubmit{
