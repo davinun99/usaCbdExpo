@@ -107,6 +107,7 @@ span.nominationNumber{
     background-color: rgba(199, 189, 111, 1);
     border-radius: 10px;
     font-weight: 800;
+    font-size: 0.8rem;
     color: white;
     padding: 0.8rem 0.7rem;
 }
