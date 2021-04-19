@@ -1,4 +1,5 @@
-/*@import url('../fonts/Montserrat-Regular.ttf');
+
+/*
 @import url('../fonts/Montserrat-Bold.ttf');
 */
 body{
@@ -133,6 +134,16 @@ span.nominationNumber{
 }
 .footerLogo{
     
+}
+.navList{
+    font-size: 0.8rem;
+    width: 100%;
+    justify-content: space-evenly;
+}
+@media(min-width: 1150px){
+    .navList{
+        font-size: 1rem;
+    }
 }
 @media (max-width: 768px){
     .footerLogo{
