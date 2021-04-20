@@ -76,8 +76,8 @@
         </section>
         <section class="instructionList">
             <div class="container">
-                <ul class="text-white list-unstyled fontBold row justify-content-center">
-                    <div class="col-11 col-md-10 row">
+                <div class="text-white fontBold row justify-content-center">
+                    <ul class="instructionListUl list-unstyled  col-11 col-md-10 row">
                         <li class="col-12 col-md-4">
                             <div class="d-flex align-items-end">
                                 <h1 class="capitalizedNumber fontExtraBold">1.</h1>
@@ -96,8 +96,8 @@
                                 <p class="">Submit your form and wait for voting to begin!</p>
                             </div>
                         </li> 
-                    </div>
-                </ul>
+                    </ul>
+                </div>
             </div>
         </section> 
         <section class="termsAndConditions container mb-5 pb-5">
@@ -107,7 +107,7 @@
                         <h3 class="text-center fontExtraBold pb-4">TERMS & CONDITIONS</h3>                        
                         <div class="row">
                             <div class="row">
-                                <ul class="col-12 col-md-6 list-unstyled">
+                                <ul class="col-12 col-lg-6 list-unstyled">
                                     <li class="d-flex">
                                         <img src="img/check-icon.png" alt="Check" class="checkImg">
                                         <div class="">
@@ -135,7 +135,7 @@
                                         </div>  
                                     </li>
                                 </ul>
-                                <ul class="col-12 col-md-6 list-unstyled">
+                                <ul class="col-12 col-lg-6 list-unstyled">
                                     <li class="d-flex mt-3 mt-sm-4 mt-md-0">
                                         <img src="img/check-icon.png" alt="Check" class="checkImg">
                                         <div class="">
@@ -188,7 +188,7 @@
                                 <span class="fontExtraBold  text-center">Best CBD Tincture</span>
                             </li>
                         </ul>
-                        <ul class="list-unstyled d-flex justify-content-between categoriesList">
+                        <ul class="list-unstyled d-flex justify-content-between categoriesList catList2">
                             <li class="d-flex flex-column align-items-center">
                                 <img src="img/best-cbd-flower-icon.png" alt="Flower">
                                 <span class="fontExtraBold text-center">Best CBD Flower</span>
@@ -212,15 +212,15 @@
         </div>
         <section class="container nominations">
             <div class="row d-flex justify-content-center">
-                <form class="col-11 col-md-10">
+                <form class="col-11 col-md-12 col-lg-10 was-validated" id="productsForm">
                     <div class="nominationCard mb-5">
                         <div class="row nominationForm">
                             <div class="col-12 col-md-2 d-flex align-items-center">
                                 <span class="btn btn-block text-uppercase nominationNumber mx-auto mx-md-0">Nomination #1</span>
                             </div>
                             <div class="col-12 col-md-5 mt-3 mt-md-0">
-                                <select class="form-control selectCategory" name="" id="">
-                                    <option value="">*Select the category</option>
+                                <select class="form-control selectCategory custom-select" required name="" id="select1">
+                                    <option value="">Select the category</option>
                                     <option value="1">Best CBD Vape</option>
                                     <option value="2">Best CBD Edible</option>
                                     <option value="2">Best CBD Tropical</option>
@@ -232,7 +232,7 @@
                                 </select>
                             </div>
                             <div class="col-12 col-md-5 mt-3 mt-md-0">
-                                <input type="text" class="form-control productInput" placeholder="Write product name here" name="" id="">
+                                <input type="text" id="product1" class="form-control productInput" required placeholder="Write product name here" name="" id="">
                             </div>
                         </div>
                     </div>
@@ -242,8 +242,8 @@
                                 <span class="btn btn-block text-uppercase nominationNumber mx-auto mx-md-0">Nomination #2</span>
                             </div>
                             <div class="col-12 col-md-5 mt-3 mt-md-0">
-                                <select class="form-control selectCategory" name="" id="">
-                                    <option value="">*Select the category</option>
+                                <select class="form-control selectCategory custom-select" name="" id="select2">
+                                    <option value="">Select the category</option>
                                     <option value="1">Best CBD Vape</option>
                                     <option value="2">Best CBD Edible</option>
                                     <option value="2">Best CBD Tropical</option>
@@ -255,7 +255,7 @@
                                 </select>
                             </div>
                             <div class="col-12 col-md-5 mt-3 mt-md-0">
-                                <input type="text" class="form-control productInput" placeholder="Write product name here" name="" id="">
+                                <input type="text" id="product2" class="form-control productInput" placeholder="Write product name here" name="" id="">
                             </div>
                         </div>
                     </div>
@@ -265,8 +265,8 @@
                                 <span class="btn btn-block text-uppercase nominationNumber mx-auto mx-md-0">Nomination #3</span>
                             </div>
                             <div class="col-12 col-md-5 mt-3 mt-md-0">
-                                <select class="form-control selectCategory" name="" id="">
-                                    <option value="">*Select the category</option>
+                                <select class="form-control selectCategory custom-select" name="" id="select3">
+                                    <option value="">Select the category</option>
                                     <option value="1">Best CBD Vape</option>
                                     <option value="2">Best CBD Edible</option>
                                     <option value="2">Best CBD Tropical</option>
@@ -278,7 +278,7 @@
                                 </select>
                             </div>
                             <div class="col-12 col-md-5 mt-3 mt-md-0">
-                                <input type="text" class="form-control productInput" placeholder="Write product name here" name="" id="">
+                                <input type="text" id="product3" class="form-control productInput" placeholder="Write product name here" name="" id="">
                             </div>
                         </div>
                     </div>
@@ -288,13 +288,13 @@
                                 <span class="btn btn-block text-uppercase nominationNumber mx-auto mx-md-0">Contact info</span>
                             </div>
                             <div class="col-12 col-md-3 mt-3 mt-md-0">
-                                <input type="text" class="form-control contactInput" placeholder="Full Name" name="" id="">
+                                <input type="text" class="form-control contactInput" required placeholder="Full Name" name="" id="">
                             </div>
                             <div class="col-12 col-md-3 mt-3 mt-md-0">
-                                <input type="tel" class="form-control contactInput" placeholder="Phone" name="" id="">
+                                <input type="tel" class="form-control contactInput" required placeholder="Phone" name="" id="">
                             </div>
                             <div class="col-12 col-md-4 mt-3 mt-md-0">
-                                <input type="email" class="form-control productInput" placeholder="Email" name="" id="">
+                                <input type="email" class="form-control productInput" required placeholder="Email" name="" id="">
                             </div>
                         </div>
                     </div>
@@ -323,10 +323,10 @@
                             <li class="mb-3"><a href="#footer">BECOME AN EXHIBITOR</a></li>
                             <li class="mb-3"><a href="#footer">BECOME A SPONSOR</a></li>
                             <li class="mb-3"><a href="#footer">BECOME A SPEAKER</a></li>
-                            <li class="mb-3"><a href="#footer"></a>BECOME A MEDIA PARTNER ATTEND</a></li>
+                            <li class="mb-3"><a href="#footer">BECOME A MEDIA PARTNER ATTEND</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-2 mt-4 mt-lg-0">
+                    <div class="col-6 col-md-4 col-lg-2 mt-4 mt-md-0">
                         <a class="footerTitle">PAST SHOWS</a>
                         <ul class="list-unstyled">
                             <li class="mb-3"><a href="#footer">MIAMI 2019</a></li>
@@ -355,7 +355,7 @@
             </div>
             <div class="row justify-content-center logoImageContainer">
                 <div class="col-11 col-md-10 row justify-content-end">
-                    <div class="col-6 col-lg-2">
+                    <div class="col-6 col-md-8 col-lg-2">
                         <img src="img/cbdExpoLogoB&W.svg" width="100%" class="footerLogo" alt="USA CBD Expo logo">
                     </div>
                 </div>
@@ -365,5 +365,6 @@
     <!--<script src="js/popper.min.js"></script>-->
     <!--<script src="js/bootstrap.min.js"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
