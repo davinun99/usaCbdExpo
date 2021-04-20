@@ -5,6 +5,7 @@
 body{
     background-image: url('../img/background.jpg');
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
 }
 .fontBold{
     font-weight: 700;
@@ -133,9 +134,6 @@ span.nominationNumber{
 .contactInput{
     width: 100%;
 }
-.footerLogo{
-    
-}
 .navList{
     font-size: 0.8rem;
     width: 100%;
@@ -147,9 +145,6 @@ span.nominationNumber{
     }
 }
 @media (max-width: 768px){
-    .footerLogo{
-        
-    }
     .mainText{
         font-size: 1.4rem;
         text-align: center;
