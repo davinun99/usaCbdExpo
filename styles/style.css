@@ -5,7 +5,9 @@
 body{
     background-image: url('../img/background.jpg');
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
+}
+.mainSection{
+    height: 70vh;
 }
 .fontBold{
     font-weight: 700;
@@ -283,4 +285,10 @@ footer.footer{
 }
 .footerLinks li{
     font-size: 0.8rem;
+}
+
+@media (max-width: 572px){
+    .mainSection{
+        height: 100vh;
+    }
 }
